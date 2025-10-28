@@ -3,13 +3,12 @@
 //nombre, marca, tipo (teléfono, laptop, etc.), cantidad disponible y proveedor.
 //Implementa un sistema de proveedores que suministran los productos. Permite buscar
 //productos por tipo, ver qué productos están en bajo stock y generar pedidos a los proveedores.
-
-const prompt = require("prompt-sync")({ sigint: true });
+const prompt = require("prompt-sync")();
 const { productos } = require("./productos");
 const { mostrarStock } = require("./MostrarStock");
 const { buscarPorTipo } = require("./buscar");
 const { bajoStock } = require("./BajoStock");
-const { generarPedidos } = require("./pedidos");  
+const { generarPedidos } = require("./pedidos"); 
 
 let opcion = "";
 
@@ -36,4 +35,4 @@ do {
   } else {
     console.log(" Opción no válida, intente nuevamente.");
   }
-} while (opcion !== "5");
+} while (opcion != "5");

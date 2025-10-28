@@ -1,7 +1,7 @@
 
 const { productos } = require("./productos");
 function bajoStock() {
-  console.log("\n⚠ Productos con bajo stock (menos de 5 unidades):\n");
+  console.log("\n Productos con bajo stock (menos de 5 unidades):\n");
 
   let hayBajoStock = false;
   for (let i = 0; i < productos.length; i++) {
