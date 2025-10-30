@@ -8,5 +8,5 @@ export function cargarDatos() {
 
 export function guardarDatos(datos) {
     const texto = JSON.stringify(datos, null, 2);
-    fs.writeFileSync(rutaAlumnos, texto, "utf-8");
+    fs.writeFileSync(rutaDatos, texto, "utf-8");
 }
