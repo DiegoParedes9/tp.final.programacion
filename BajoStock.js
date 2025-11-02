@@ -1,12 +1,11 @@
-
 const { productos } = require("./productos");
 function bajoStock() {
-  console.log("\n Productos con bajo stock (menos de 5 unidades):\n");
+  console.log("Estos son los productos con bajo stock (menos de 10 unidades): ");
 
   let hayBajoStock = false;
   for (let i = 0; i < productos.length; i++) {
     let p = productos[i];
-    if (p.cantidad < 5) {
+    if (p.cantidad < 10) {
       console.log("- " + p.nombre + " (" + p.tipo + ") | Marca: " + p.marca + " | Cantidad: " + p.cantidad);
       hayBajoStock = true;
     }
