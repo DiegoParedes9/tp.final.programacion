@@ -1,7 +1,7 @@
 
 const { productos } = require("./productos");
 function mostrarStock() {
-  console.log("STOCK COMPLETO:\n");
+  console.log("STOCK COMPLETO: ");
 
   for (let i = 0; i < productos.length; i++) {
     let p = productos[i];
